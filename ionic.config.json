@@ -1,0 +1,7 @@
+{
+  "name": "flowerFire",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
