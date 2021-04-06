@@ -41,7 +41,7 @@ def modelPredictions(input):
     img_height = 180
     img_width = 180
     batch_size = 5
-    data_dir = pathlib.Path("C:/Users/corma/Desktop/New folder/FYP/MobileAPP/flowerFireApp/flowerRecognitionApp/flask-api/flower_photos")
+    data_dir = pathlib.Path("flowerRecognitionApp/flask-api/flower_photos")
 
     #We do this so we can get the class names
     train_ds = tf.keras.preprocessing.image_dataset_from_directory(
@@ -54,7 +54,7 @@ def modelPredictions(input):
     class_names = train_ds.class_names
 
     #Load in the model
-    reconstructed_model = keras.models.load_model("C:/Users/corma/Desktop/New folder/FYP/MobileAPP/flowerFireApp/flowerRecognitionApp/flask-api/my_h5_model.h5")
+    reconstructed_model = keras.models.load_model("flowerRecognitionApp/flask-api/my_h5_model.h5")
 
 
     #Split the dataurl so we remove the text before the comma
