@@ -69,7 +69,7 @@ def modelPredictions(input):
 
     #Load the image
     img = keras.preprocessing.image.load_img(
-        "C:/Users/corma/Desktop/New folder/FYP/MobileAPP/flowerFireApp/flowerRecognitionApp/flask-api/decoded_image.png", target_size=(img_height, img_width)
+        "flowerRecognitionApp/flask-api/decoded_image.png", target_size=(img_height, img_width)
     )
     img_array = keras.preprocessing.image.img_to_array(img)
     img_array = tf.expand_dims(img_array, 0)
